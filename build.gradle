@@ -1,0 +1,29 @@
+plugins {
+    id 'idea'
+    id 'java'
+    id "io.freefair.lombok" version "5.3.0"
+}
+
+group 'org.mercadolibre.graphql'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'com.graphql-java-kickstart:graphql-java-tools:6.2.0'
+    compile 'com.graphql-java:graphql-java:15.0'
+
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile 'ch.qos.logback.contrib:logback-json-core:0.1.5'
+    compile 'org.slf4j:slf4j-api:1.7.25'
+
+    testImplementation("org.assertj:assertj-core:3.18.1")
+
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.12.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+}
